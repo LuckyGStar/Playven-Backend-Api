@@ -1,0 +1,19 @@
+#shared_court_label {
+  position: relative;
+  display: block;
+}
+
+#shared_courts_list {
+  position: absolute;
+  display: none;
+}
+
+#shared_court_label:hover #shared_courts_list {
+  display: block;
+  background: #2b303a;
+  background-color: rgba(43, 48, 58, 0.8);
+  color: white;
+  border-radius: 5px;
+  padding-right: 5px;
+  left: 5px;
+}

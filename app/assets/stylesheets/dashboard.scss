@@ -1,0 +1,35 @@
+// Place all the styles related to the dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.dashboard-chart {
+  height: 250px !important;
+}
+
+#dashboardExample {
+  width: inherit;
+}
+
+#barchart {
+  height: 300px;
+}
+
+#avgrate {
+  width: 39.5px;
+  height: 10px;
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 1;
+  color: #78909c;
+}
+
+#percentage {
+  width: 44.5px;
+  height: 18px;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 0.8;
+  color: #263238;
+  padding-top: 10px;
+}

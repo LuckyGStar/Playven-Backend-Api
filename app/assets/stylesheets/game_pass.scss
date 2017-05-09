@@ -1,0 +1,18 @@
+// Place all the styles related to the GamePass controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.game-pass-form {
+  .react-datepicker__close-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+  .time-limitation-row {
+    margin-top: 10px;
+  }
+  .time-limitation-row>div {
+    margin-top: 7px;
+  }
+}

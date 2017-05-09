@@ -1,0 +1,74 @@
+.button {
+  border: 1px solid $border-color;
+  padding: 0.6em 1em 0.7em 1em;
+  @include border-radius($button);
+  text-decoration: none;
+  color: rgba(0,0,0,0.6);
+  font-size: 14px;
+  outline: none;
+  transition: all .1s;
+  &:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,0.8);
+    border-color: $border-hover-color;
+  }
+
+  &.green-border-button {
+    color: $accent-color !important; // override bootstrap styles
+    border-color: $accent-color;
+    background-color: #fff;
+  }
+  &.green-inner-button {
+    color: #fff;
+    background-color: $button-green;
+    border-color: $button-green;
+  }
+  &.green-inner-button:hover {
+    color: $button-green;
+    background-color: $white;
+    border-color: $button-green;
+  }
+}
+
+.count-button-wrapper {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border: 1px solid $border-color;
+  @include border-radius($round);
+  background-color: #fff;
+  margin-right: 20px;
+  .count-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+ .unfollow-button {
+   position: relative;
+   width: 6.5em;
+   overflow: hidden;
+   display: inline-block;
+   .content {
+     position: absolute;
+     padding: 0.5em 1em;
+     left: 0;
+     transition: top 0.4s ease 0.2s;
+     overflow: hidden;
+   }
+   .top {
+     top: 0;
+   }
+   &:hover .top {
+     top: -80px;
+   }
+   .bottom {
+     top: 80px;
+   }
+   &:hover .bottom {
+     top: 0;
+   }
+ }
